@@ -1,0 +1,189 @@
+p {
+    color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Area  */
+
+nav img {
+    width: 290px;
+
+}
+nav li {
+    font-weight: 500;
+    padding-left: 40px;
+}
+nav a {
+    color: #3c3c3c;
+}
+
+
+/* Intro Area  */
+.intro {
+    height: 600px;
+}
+.intro h1 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+}
+.intro h1:first-child {
+    color: #FA804C;
+}
+.intro h1:nth-child(2) {
+    color:#363958;
+    margin-top: -20px;
+}
+.intro-text {
+    padding-left: 80px;
+}
+ #myFlex {
+     display: flex;
+     align-items: center;
+}
+
+
+/* Top Card Area  */
+.cardTop {
+    margin-top: 40px;
+}
+.cardTop h2, .cardBottom h2 {
+    font-family: 'Bebas Neue', cursive;
+    color:#363958;
+    font-size: 48px;
+}
+.cardImg {
+    text-align: center;
+}
+.cardImg img {
+    width: 311px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    height: 311px;
+}
+.card {
+    height: 535px;
+    padding: 20px 10px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 20px;
+}
+.card h5 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color:#363958;
+}
+.card button, .intro button {
+    padding: 18px 25px ;
+    background: linear-gradient(180deg, #3D4FF3 0%, #3543BC 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+.card button>img, .intro button>img {
+    width: 24px;
+}
+.card-info h3{
+    padding-right: 60px;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+    color: #FA804C;
+}
+
+/* Bottom Card Area  */
+.cardBottom h2 {
+    margin: 80px 0 60px 0;
+}
+.cardBottom .card {
+    height: 550px;
+}
+
+/* Service Area  */
+.service {
+    margin-top: 120px;
+}
+.s-card {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 90%;
+}
+.s-card img {
+    width: 75px;
+    margin-right: 20px;
+}
+.s-card h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color:#363958;
+}
+
+/* Footer Area  */
+footer {
+    color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
+}
+footer li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+footer a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+    nav img {
+        width: 200px;
+    }
+    #noAlign {
+        align-items: unset;
+    }
+}
+@media (max-width: 576px) {
+    nav li {
+        padding-left: 0;
+    }
+    #myFlex {
+        flex-direction: column-reverse;
+    }
+    .intro-text {
+        padding-left: 20px;
+    }
+    .intro {
+        height: 720px;
+    }
+    .intro h1 {
+        font-size: 60px;
+    }
+    .cardTop h2, .cardBottom h2 {
+        text-align: center;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .cardBottom .card {
+        height: 700px !important;
+    }
+    .s-card {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .s-card img {
+        margin: 0;
+    }
+    #s-card {
+        margin-top: 50px;
+    }
+    #noAlign {
+        align-items: unset;
+    }
+}
